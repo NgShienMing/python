@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 def calcDayInYear():
     year = 2008 #input("Enter Year: ")

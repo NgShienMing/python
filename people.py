@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 class person:
     def __init__ (self, name, birthday):
         self.name = name

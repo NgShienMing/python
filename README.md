@@ -1,2 +1,2 @@
 # Python
-My python codes from Windows and Linux
+My Python codes from Windows and Linux

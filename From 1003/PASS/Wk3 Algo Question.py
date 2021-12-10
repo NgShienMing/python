@@ -17,9 +17,12 @@ def findMostChar(str: str):
             maxChar.append(key)
     return maxChar
 
-print(findMostChar("apple"))
-print(findMostChar("prettier"))
-print(findMostChar("behaviour"))
+str1 = "apple"
+str2 = "prettier"
+str3 = "behaviour"
+print(findMostChar(str1))
+print(findMostChar(str2))
+print(findMostChar(str3))
 
 # Q2
 def anagram1(str1: str, str2: str):
@@ -64,10 +67,14 @@ def anagram2(str1: str, str2: str):
         else:
             return "{} and {} are not anagrams" .format(str1, str2)
 
-print(anagram1("listen", "silent"))
-print(anagram2("listen", "silent"))
-print(anagram1("teal", "tail"))
-print(anagram2("teal", "tail"))
+str1 = "listen"
+str2 = "silent"
+str3 = "teal"
+str4 = "tail"
+print(anagram1(str1, str2))
+print(anagram2(str1, str2))
+print(anagram1(str3, str4))
+print(anagram2(str3, str4))
 
 # Q3
 import math
@@ -79,7 +86,8 @@ def reverseNum(num: int):
         num = math.floor(num / 10)
     return reverseNumber
 
-print(reverseNum(9278))
+num = 9278
+print(reverseNum(num))
 
 # Q4
 def isPrime(num):
@@ -92,16 +100,19 @@ def isPrime(num):
         return "{} is a prime number" .format(num)
     else:
         return "{} is not a prime number" .format(num)
-
-print(isPrime(8388608))
+prime = 16777216
+print(isPrime(prime))
 
 # Q5
 def isPalindrome(word: str):
-    word = word.lower()
+    lowercaseWord = word.lower()
     for i in range(math.floor(len(word)/2)):
         j = len(word) - 1 - i
-        if (word[i] != word[j]):
+        if (lowercaseWord[i] != lowercaseWord[j]):
             return "{} is not a palindrome" .format(word)
     return "{} is a palindrome" .format(word)
 
-print(isPalindrome("racecar"))
+wordArr = ["racecar", "RACEcar", "Madam", "Acrobat", "9360639"]
+for i in range(len(wordArr)):
+    word = wordArr[i]
+    print(isPalindrome(word))

@@ -1,3 +1,4 @@
+"""Plot graph with matplotlib"""
 import matplotlib.pyplot as plt
 import numpy as np
 

@@ -1,28 +1,30 @@
 #!/usr/bin/env python
+"""The number of day of the date in the year"""
 
-def calcDayInYear():
-    year = 2008 #input("Enter Year: ")
-    month = 9 #input("Enter Month: ")
-    day = 27 #input("Enter Day: ")
-    numberOfDays = int(day)
+def calc_day_in_year(year, month, day):
+    """Calculate the number of day of the date in the year"""
+    number_of_days = int(day)
     feb = 28
 
-    if (int(year)%4 == 0):
+    if int(year)%4 == 0:
         feb = 29
     for i in range(1, int(month)):
-        if (i == 2):
-            numberOfDays += feb
+        if i == 2:
+            number_of_days += feb
         else:
-            if (i <= 7):
-                if not(i%2 == 0):
-                    numberOfDays += 31
+            if i <= 7:
+                if not i%2 == 0:
+                    number_of_days += 31
                 else:
-                    numberOfDays += 30
+                    number_of_days += 30
             else:
-                if not(i%2 == 0):
-                    numberOfDays += 30
+                if not i%2 == 0:
+                    number_of_days += 30
                 else:
-                    numberOfDays += 31
-    
-    print(numberOfDays)
-print(__name__)
+                    number_of_days += 31
+    print(number_of_days)
+
+YY = 2008
+MM = 9
+DD = 27
+calc_day_in_year(YY, MM, DD)

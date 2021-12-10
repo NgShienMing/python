@@ -1,27 +1,27 @@
 # Q1
 result = [
     {
-        "year": 2021,
-        "sem": 1,
+        "year": 2021, 
+        "sem": 1, 
         "units": [
             {
-                "code": "ENG1001",
-                "grade": "HD",
+                "code": "ENG1001", 
+                "grade": "HD", 
                 "mark": 83
-            },
+            }, 
             {
-                "code": "ENG1005",
-                "grade": "HD",
+                "code": "ENG1005", 
+                "grade": "HD", 
                 "mark": 84
-            },
+            }, 
             {
-                "code": "ENG1060",
-                "grade": "HD",
+                "code": "ENG1060", 
+                "grade": "HD", 
                 "mark": 90                
-            },
+            }, 
             {
-                "code": "PHS1002",
-                "grade": "HD",
+                "code": "PHS1002", 
+                "grade": "HD", 
                 "mark": 83                
             }
         ]
@@ -57,30 +57,33 @@ data = [
     "418", 77, 707, "936", False, False, 628, 932, False, 319, 
     148, "207", False
 ];
-sortedData = {
-    "integer": [],
-    "string": [],
+sorted_data = {
+    "integer": [], 
+    "string": [], 
     "boolean": []
 }
 for i in range(len(data)):
     if (type(data[i]) == int):
-        sortedData["integer"].append(data[i])
+        sorted_data["integer"].append(data[i])
     elif(type(data[i]) == str):
-        sortedData["string"].append(data[i])
+        sorted_data["string"].append(data[i])
     elif(type(data[i]) == bool):
-        sortedData["boolean"].append(data[i])
-print(sortedData)
+        sorted_data["boolean"].append(data[i])
+print(sorted_data)
 
 # Q5
-numData = [7976, 5580, 4832, 2520, 3089, 6275, 9894, 3850, 2760, 1078, 2691, 8934, 1152, 4335, 7212, 7524, 4797, 5016, 3996, 8310]
-largestNumber = numData[0]
-smallestNumber = numData[0]
+numData = [
+    7976, 5580, 4832, 2520, 3089, 6275, 9894, 3850, 2760, 1078, 
+    2691, 8934, 1152, 4335, 7212, 7524, 4797, 5016, 3996, 8310
+]
+largest_number = numData[0]
+smallest_number = numData[0]
 for i in range(len(numData)):
-    if (numData[i] > largestNumber):
-        largestNumber = numData[i]
-    elif (numData[i] < smallestNumber):
-        smallestNumber = numData[i]
-print("Largest number = {}\nSmallest number = {}" .format(largestNumber, smallestNumber))
+    if (numData[i] > largest_number):
+        largest_number = numData[i]
+    elif (numData[i] < smallest_number):
+        smallest_number = numData[i]
+print("Largest number = {}\nSmallest number = {}" .format(largest_number, smallest_number))
 
 # Q6
 odd_even = [
@@ -95,16 +98,16 @@ odd_even = [
     -32, 426, -836, 923, -442, 736, -984, -547, 582, 797, 209, 
     -784, -842
 ]
-sortedNum = {
-    "odd": [],
+sorted_num = {
+    "odd": [], 
     "even": []
 }
 for i in range(len(odd_even)):
     if (odd_even[i] % 2 == 0):
-        sortedNum["even"].append(odd_even[i])
+        sorted_num["even"].append(odd_even[i])
     else:
-        sortedNum["odd"].append(odd_even[i])
-print(sortedNum)
+        sorted_num["odd"].append(odd_even[i])
+print(sorted_num)
 
 # Q7
 import numpy as np

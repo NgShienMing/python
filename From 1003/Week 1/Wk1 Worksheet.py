@@ -19,7 +19,7 @@ def sphereVSA(diameter):
     radius = diameter/2
     volume = 4/3*math.pi*radius**3
     surfaceArea = 4*math.pi*radius**2
-    return "Sphere with a diameter of {}m has a volume of {}m3 and a surface area of {}m2" .format(diameter, volume, surfaceArea)
+    return "Sphere with a diameter of {}m has a volume of {}m3 and a surface area of {}m2" .format(diameter, round(volume, 2), round(surfaceArea, 2))
 
 sphereDiameter = 13.5
 print(sphereVSA(sphereDiameter))
@@ -28,7 +28,7 @@ print(sphereVSA(sphereDiameter))
 def coneVol(diameter, height):
     radius = diameter/2
     volume = 1/3*math.pi*radius**2*height
-    return "Cone with a diameter of {}m and a height of {}m has a volume of {}m3" .format(diameter, height, volume)
+    return "Cone with a diameter of {}m and a height of {}m has a volume of {}m3" .format(diameter, height, round(volume, 2))
 
 coneDiameter = 10.25
 coneHeight = 20.5

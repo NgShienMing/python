@@ -100,6 +100,7 @@ def isPrime(num):
         return "{} is a prime number" .format(num)
     else:
         return "{} is not a prime number" .format(num)
+        
 prime = 16777216
 print(isPrime(prime))
 

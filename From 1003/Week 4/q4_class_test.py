@@ -29,16 +29,6 @@ def draw_plus(size: int):
             output += "*"*size + "\n"
     print(output)
 
-def draw_rectangle(width, height):
-    """Draw a rectangle"""
-    output = ""
-    for i in range(1, height+1):
-        if i in (1, height):
-            output += "*"*width + "\n"
-        else:
-            output += "*" + " "*(width-2) + "*" + "\n"
-    print(output)
-
 def draw_z(size):
     """Draw a Z"""
     output = ""
@@ -53,10 +43,20 @@ def draw_z(size):
         output += "\n"
     print(output)
 
+def draw_rectangle(width, height):
+    """Draw a rectangle"""
+    output = ""
+    for i in range(1, height+1):
+        if i in (1, height):
+            output += "*"*width + "\n"
+        else:
+            output += "*" + " "*(width-2) + "*" + "\n"
+    print(output)
+
 SIZE = 5
 WIDTH = 5
 HEIGHT = 6
 draw_cross(SIZE)
 draw_plus(SIZE)
-draw_rectangle(WIDTH, HEIGHT)
 draw_z(SIZE)
+draw_rectangle(WIDTH, HEIGHT)

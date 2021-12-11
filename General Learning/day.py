@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """The number of day of the date in the year"""
 
 def calc_day_in_year(year, month, day):

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """Implementation of Person class"""
 class Person:
     """Person class"""

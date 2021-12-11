@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Drawing shapes by printing *"""
 import math
 

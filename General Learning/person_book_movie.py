@@ -4,31 +4,12 @@ from calc_day_in_year import calc_day_in_year
 def month_to_num(month: str):
     """Convert month in string to number"""
     month = month.lower()
-    month_num = 0
-    if month == "january":
-        month_num = 1
-    elif month == "february":
-        month_num = 2
-    elif month == "march":
-        month_num = 3
-    elif month == "april":
-        month_num = 4
-    elif month == "may":
-        month_num = 5
-    elif month == "june":
-        month_num = 6
-    elif month == "july":
-        month_num = 7
-    elif month == "august":
-        month_num = 8
-    elif month == "september":
-        month_num = 9
-    elif month == "october":
-        month_num = 10
-    elif month == "november":
-        month_num = 11
-    elif month == "december":
-        month_num = 12
+    month_arr = ["january", "february", "march", "april", "may", "june", "july",
+                 "august", "september", "october", "november", "december"]
+    for month_str in month_arr:
+        if month == month_str:
+            month_num = month_arr.index(month_str) + 1
+            break
     return month_num
 
 class Person:

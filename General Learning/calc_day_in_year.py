@@ -6,7 +6,7 @@ def calc_day_in_year(year, month, day):
     number_of_days = int(day)
     feb = 28
 
-    if int(year)%4 == 0:
+    if (year % 400 == 0) or (year % 100 != 0) and (year % 4 == 0):
         feb = 29
     for i in range(1, int(month)):
         if i == 2:
@@ -22,9 +22,9 @@ def calc_day_in_year(year, month, day):
                     number_of_days += 30
                 else:
                     number_of_days += 31
-    print(number_of_days)
+    return number_of_days
 
 YY = 2008
 MM = 9
 DD = 27
-calc_day_in_year(YY, MM, DD)
+print(calc_day_in_year(YY, MM, DD))

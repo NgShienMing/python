@@ -1,8 +1,9 @@
-import random
+"""Python basics"""
+#Variables
 str = 'Ng Shien Ming' #str
 int = 9278 #int
 float = 93.63 #float
-complexNum = 2+3j #complex
+complex_num = 2+3j #complex
 list = ['Ng', 'Shien', 'Ming'] #list/array
 tuple = ('Ng', 'Shien', 'Ming') #tuple
 dict = {'name': 'Ming', 'age': 19} #dict/object
@@ -13,14 +14,7 @@ byte = b'Ming' #bytes
 byteArr = bytearray(5) #bytearray
 memView = memoryview(bytes(5)) #memoryview
 
-print(random.randrange(1,10))
-#Printing new looking stuff
-'''
-print(k)
-print(l)
-print(m)
-'''
-
+#Loops
 #Print items in list
 for i in list:
     print(i)

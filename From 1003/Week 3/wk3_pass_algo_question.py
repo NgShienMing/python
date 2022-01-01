@@ -100,7 +100,7 @@ print(reverse_num(NUMBER))
 def is_prime(num):
     """Check whether the number is a prime number"""
     flag = True
-    for i in range(2, num):
+    for i in range(2, math.floor(math.sqrt(num))+1):
         if num % i == 0:
             flag = False
             break

@@ -20,6 +20,18 @@ def draw_cross(size: int):
         back -= 1
     print(output)
 
+def draw_cross_2(size: int):
+    """Draw a cross"""
+    cross = "";
+    for r in range(size):
+        for c in range(size):
+            if r == c or c == size - r - 1:
+                cross += "*"
+            else:
+                cross += " "
+        cross += "\n"
+    print(cross)
+
 def draw_plus(size: int):
     """Draw a plus"""
     output = ""
@@ -58,6 +70,7 @@ SIZE = 5
 WIDTH = 5
 HEIGHT = 6
 draw_cross(SIZE)
+draw_cross_2(SIZE)
 draw_plus(SIZE)
 draw_z(SIZE)
 draw_rectangle(WIDTH, HEIGHT)
